@@ -7,6 +7,21 @@
   pointer-events: none;
 }
 
+.gray-nav {
+  display: flex;
+  padding: 1rem;
+  background-color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.list {
+  text-align: left;
+  margin-top: 0.5rem;
+  padding: 0 1rem 0 1rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
