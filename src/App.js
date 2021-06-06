@@ -11,11 +11,18 @@ function App() {
     return changeLike(like+1);
   }
 
+  let changeTheTitle = () => {
+    let newArr = [...listTitle]; // 복사본을 하나 만들어야한다!!
+    newArr[0] = '바뀐 useState 활용'
+    newListTitle(newArr);
+  }
+
   return (
     <div className="App">
       <div className="gray-nav">
         <div>React Basic</div>
       </div>
+      <button className="button" onClick={changeTheTitle}>타이틀이 변경되는 버튼</button>
       <div className="list">
         <h3>{listTitle[0]} <span onClick={addLikeCnt}>👍</span> {like} </h3>
         <p>4월 9일</p>
